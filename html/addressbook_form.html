@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/addressbook_form.css">
+    <title>AddressBook App</title>
+</head>
+<body>
+    <header class="header-content header">
+		<div class="logo-content">
+			<img src="../assets/images/icon.png" alt="" />
+			<div>
+				<span class="address-text">Address</span><br />
+				<span class="address-text address-book">Book</span>
+			</div>
+		</div>
+  </header>
+  <form class="signup-form" action="/register" method="post" >
+
+    <!-- form header -->
+    <div class="form-header">
+      <h1>PERSON ADDRESS FORM</h1>
+    </div>
+
+    <!-- form body -->
+    <div class="form-body">
+
+      <!-- Full name and Phone Number -->
+      <div class="horizontal-group">
+        <div class="form-group left">
+          <label for="firstname" class="label-title">Full Name</label>
+          <input type="text" id="firstname" class="form-input" placeholder="" required="required" />
+        </div>
+        <div class="form-group right">
+          <label for="lastname" class="label-title">Phone Number</label>
+          <input type="number" id="phonenumber" class="form-input" placeholder="" />
+      </div>
+      </div>
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address" class="label-title">Address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+      </div>
+    
+    <!--city-->
+    
+    <div style="width: 30%;height: 100px; display: inline-block;">
+    <label for="city" class="city">City</label>
+    <select name="city" id = "city">
+        <optgroup label ="Mumbai">
+            <option value="Pune">Pune</option>
+            <option value="Banglore">Banglore</option>
+        </optgroup>
+    </select>
+   </div>
+    <div style="width: 30%;height: 100px; display: inline-block;">
+        <label for="state" class="state">State</label>
+        <select name="state" id = "state">
+            <optgroup label ="Maharashtra">
+                <option value="Pune">Karnataka</option>
+                <option value="Banglore">Andhrapradesh</option>
+            </optgroup>
+        </select>
+    </div>
+    <div style="width: 30%;height: 33%; display: inline-block;">
+        <label for="zipcode" class="label-title">Zip Code</label>
+          <input type="text" id="firstname" class="form-input" placeholder="" required="required" />
+    </div>
+<div class="buttonParent">
+<div class="submit-reset">
+    <button class="button addButton" id="addButton"
+        type="add">Add</button>
+    <button type="reset" class="resetButton button">Reset</button>
+</div>
+    </div>
+  </form>
+</body>
+</html>
